@@ -20,11 +20,20 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <mvc:interceptors>
-        <mvc:interceptor>
-            <mvc:mapping path="/*"/>
-            <bean class="ru.interceptors.CheckUserInterceptor"/>
-        </mvc:interceptor>
-    </mvc:interceptors>
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/*"/>-->
+            <!--<bean class="ru.interceptors.CheckUserInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/*"/>-->
+            <!--<ref bean="timeInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
+    <bean id="messageSource"
+          class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basename" value="/WEB-INF/locales/messages"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
 
 </beans>

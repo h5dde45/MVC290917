@@ -500,3 +500,7 @@ footer#main {
     font: normal 11px/16px Arial, Helvetica, sans-serif;
     width: 100%;
 }
+.error{
+    color: #cc0000;
+    font-style: italic;
+}
