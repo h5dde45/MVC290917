@@ -7,6 +7,6 @@
 <p>=== ${user.name}</p>
 <p>=== ${user.password}</p>
 <p>=== ${user.admin}</p>
-<%--<p>=== ${time}</p>--%>
+<p>=== ${locale}</p>
 </body>
 </html>

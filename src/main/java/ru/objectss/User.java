@@ -4,9 +4,9 @@ import javax.validation.constraints.Size;
 
 //@XmlRootElement
 public class User {
-    @Size(min = 5,message = "Имя должно быть больше 6 знаков")
+    @Size(min = 5,message = "{name.size.error}")
     private String name;
-    @Size(min = 5,max = 10,message = "Пароль должен быть от 5 до 10 знаков")
+    @Size(min = 5,max = 10,message = "{password.size.error}")
     private String password;
     private boolean admin;
 
